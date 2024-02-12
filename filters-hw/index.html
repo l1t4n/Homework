@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+
+      <div class="btns-wrapper">
+
+        <button id="productlist">
+          Product List
+        </button>
+        <button id="setfilters">
+          Set Filters
+        </button>
+        <button id="sortproducts">
+          Sort Products
+        </button>
+
+      </div>
+
+      <div id="renderplace">
+
+        <select id="category">
+          <optgroup label="Category">
+            <option value="TV">TV</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Smartphone">Smartphone</option>
+            <option value="Fridge">Fridge</option>
+            <option value="Boiler">Boiler</option>
+            <option value="Stove">Stove</option>
+            <option value="Washing Machine">Washing Machine</option>
+            <option value="Vacuum Cleaner">Vacuum Cleaner</option>
+            <option value="Conditioner">Conditioner</option>
+            <option value="Iron">Iron</option>
+            <option value="Teapot">Teapot</option>
+            <option value="Electric Shaver">Electric Shaver</option>
+            <option value="Toaster">Toaster</option>
+            <option value="Coffee Machine">Coffee Machine</option>
+
+          </optgroup>
+        </select>
+
+        <select id="manufacturer">
+          <optgroup label="Manufacturer">
+            <option value="Sony">Sony</option>
+            <option value="Acer">Acer</option>
+            <option value="Apple">Apple</option>
+            <option value="Vestfrost">Vestfrost</option>
+            <option value="Indesit">Indesit</option>
+            <option value="Gorenje">Gorenje</option>
+            <option value="Electrolux">Electrolux</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Toshiba">Toshiba</option>
+            <option value="Philips">Philips</option>
+            <option value="Bosch">Bosch</option>
+            <option value="Braun">Braun</option>
+            <option value="Tefal">Tefal</option>
+            <option value="Delonghi">Delonghi</option>
+
+          </optgroup>
+        </select>
+
+        <div class="input-range-wrapper">
+          <p>price from</p>
+          <div id="rangeoutput">
+            0
+          </div>
+          <input id="range" min="0" max="2000" type="range">
+        </div>
+        
+        <input id="date" type="date">
+        
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
