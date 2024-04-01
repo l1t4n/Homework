@@ -109,6 +109,6 @@ async function fetchProductsPage(page: number = 1) {
 
   displayProducts(products);
   displayPagination(totalCount);
-}
+
 
       
