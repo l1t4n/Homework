@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Store</h1>
+    <div id="authForm">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+    <div id="productForm" style="display: none;">
+      <input type="text" id="productTitle" placeholder="Product Title">
+      <input type="text" id="productDescription" placeholder="Product Description">
+      <input type="number" id="productPrice" placeholder="Product Price">
+      <label for="hasDiscount">Has Discount?</label>
+      <input type="checkbox" id="hasDiscount">
+      <button onclick="addProduct()">Add Product</button>
+    </div>
+    <button onclick="fetchProducts()">Get Products</button>
+    <div id="products"></div>
+    <div id="pagination"></div>
+  </div>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
